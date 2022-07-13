@@ -30,5 +30,5 @@ $ deactivate
 
 Example:
 ```
-python concatenate-word.py output.docx -f test1.docx test2.docx
+python3 concatenate-word.py output.docx -f test1.docx test2.docx
 ```
