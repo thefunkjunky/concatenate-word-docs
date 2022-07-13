@@ -34,6 +34,10 @@ def main():
       files.append(os.path.abspath(filename))
     else:
       not_files.append(filename)
+
+  if not files:
+    print("No files listed to concatenate.")
+    exit()
   if not_files:
     print(f"{not_files} are not files.")
     exit()
@@ -52,7 +56,6 @@ def main():
       concatenated_word.element.body.append(element)
 
   concatenated_word.save(args.output_file)
-
 
 
 if __name__ == '__main__':
